@@ -1,0 +1,72 @@
+.skill-section {
+    padding-bottom: 7rem;
+    padding-top: 4rem;
+}
+.section-title center {
+    text-align: center;
+}
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.skill-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-primary);
+    opacity: 1;
+    animation: showText 0.5s 1s linear forwards;
+    white-space: nowrap;
+}
+
+.skill-percent {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-primary);
+    opacity: 1;
+    animation: showText 0.5s 1s linear forwards;
+    white-space: nowrap;
+}
+
+.progress-line {
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    background-color: #cdcdcdcd;
+    border-radius: 50px;
+    position: relative;
+}
+
+.progress-line span {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: hsla(218, 52%, 51%, 0.841);
+    transition: 1s all;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skill-section {
+        padding-top: 3.2rem;
+        height: 45vh;
+    }
+}
