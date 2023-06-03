@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles/Project.css";
-// import Fade from "react-reveal/Fade";
+//import Fade from "react-reveal/Fade";
 
-// import Pr1 from "../assets/Pr1.png";
-// import Pr2 from "../assets/Pr2.png";
-// import Pr3 from "../assets/Pr3.png";
+import Pr1 from "../assets/Pr1.png";
+import Pr2 from "../assets/Pr2.png";
+ import Pr3 from "../assets/Pr3.png";
 
 const data = [
     {
         id: 1,
-        // image: Pr1,
+        image: Pr1,
         title: "Kidney Disease Prediction",
         github: "https://github.com/Palakmodi24/KidneyDisease",
         demo: "https://colab.research.google.com/drive/12m2Sq5vXoelBeNeAaG59jnNVIsglC-KC?usp=sharing",
@@ -17,7 +17,7 @@ const data = [
 
     {
         id: 2,
-        // image: Pr2,
+        image: Pr2,
         title: "Anime Character Recognition",
         github: "https://github.com/Palakmodi24/AnimeCharacter",
         demo: "https://www.kaggle.com/code/vaishnavideulkar/minor",
@@ -25,7 +25,7 @@ const data = [
 
     {
         id: 3,
-        // image: Pr3,
+        image: Pr3,
         title: "Drum Kit",
         github: "https://github.com/Palakmodi24/DrumKit",
         demo: "https://github.com/Palakmodi24/DrumKit",

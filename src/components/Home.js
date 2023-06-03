@@ -2,7 +2,7 @@ import React from "react";
 // import Typical from "react-typical";
 import "../styles/Home.css";
 import CTA from "./CTA";
-// import ME from "../assets/me.png";
+import ME from "../assets/me.png";
 import HomeSocials from "./HomeSocials";
 
 const Home = () => {
@@ -39,7 +39,7 @@ const Home = () => {
                     </div>
                     <CTA />
                     <HomeSocials />
-                    <div className="me">{/* <img src={ME} alt="me" /> */}</div>
+                    <div className="me">{<img src={ME} alt="me" />}</div>
                 </div>
             </div>
         </header>

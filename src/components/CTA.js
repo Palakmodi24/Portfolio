@@ -1,9 +1,9 @@
 import React from "react";
-// import Resume from "../assets/Resume_Palak_Modi_Updated.pdf";
+//import Resume from "../../assets/Resume_Palak_Modi_Updated.pdf";
 const CTA = () => {
     return (
         <div className="cta">
-            <a href="www.google.com" download className="btn">
+            <a href="https://modipalak62.hackerresume.io/38c5d53f-4642-481b-9673-6bf6999b0a3a" download className="btn">
                 Download Resume
             </a>
             <a href="#contact" className="btn">
