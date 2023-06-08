@@ -15,8 +15,8 @@ const Home = () => {
     }, []);
     return (
         <header className="section-header">
-            <div className="home">
-                <div className="container header__container">
+            <div className="home" data-aos="fade-up">
+                <div className="container header__container" data-aos="fade-up">
                     <h3 data-aos="fade-up">
                         Hello, I'm <span className="name">Palak Modi</span>{" "}
                     </h3>
