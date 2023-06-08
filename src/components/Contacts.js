@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 import "../styles/Contacts.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -6,6 +8,11 @@ import { useRef } from "react";
 import emailjs from "emailjs-com";
 
 const Contacts = () => {
+    useEffect(() => {
+        Aos.init({duration:4000})
+    
+    
+    }, []);
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -25,7 +32,7 @@ const Contacts = () => {
             <h2>With Me</h2>
             <div className="container contact_container">
                 <div className="contact_options">
-                    <article className="contact_option">
+                    <article className="contact_option" data-aos="fade-up">
                         <MdOutlineEmail />
                         <h4>Email</h4>
                         <h5>modipalak62@gmail.com</h5>
@@ -34,7 +41,7 @@ const Contacts = () => {
                         </a>
                     </article>
 
-                    <article className="contact_option">
+                    <article className="contact_option" data-aos="fade-up">
                         <AiFillLinkedin />
                         <h4>Linkedin</h4>
                         <h5>Palak Modi</h5>
@@ -47,7 +54,7 @@ const Contacts = () => {
                     </article>
                 </div>
                 {/* End of contact */}
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail} data-aos="fade-up">
                     <input
                         type="text"
                         name="name"

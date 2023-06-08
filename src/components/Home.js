@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 // import Typical from "react-typical";
 import "../styles/Home.css";
 import CTA from "./CTA";
@@ -6,15 +8,20 @@ import ME from "../assets/me.png";
 import HomeSocials from "./HomeSocials";
 
 const Home = () => {
+    useEffect(() => {
+        Aos.init({duration:3000})
+    
+    
+    }, []);
     return (
         <header className="section-header">
             <div className="home">
                 <div className="container header__container">
-                    <h3>
+                    <h3 data-aos="fade-up">
                         Hello, I'm <span className="name">Palak Modi</span>{" "}
                     </h3>
 
-                    <div className="profile-details-role">
+                    <div className="profile-details-role" data-aos="fade-up">
                         <span className="primary-text">
                             <h2>
                                 {/* <Typical
@@ -39,7 +46,7 @@ const Home = () => {
                     </div>
                     <CTA />
                     <HomeSocials />
-                    <div className="me">{<img src={ME} alt="me" />}</div>
+                    <div className="me" data-aos="fade-up">{<img src={ME} alt="me" />}</div>
                 </div>
             </div>
         </header>

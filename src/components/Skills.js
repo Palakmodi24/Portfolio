@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 import "../styles/Skills.css";
 
 const Skills = () => {
+    useEffect(() => {
+        Aos.init({duration:2000})
+    
+    
+    }, []);
     return (
         <section id="skills" className="skill-section">
-            <h5>Why Choose Me</h5>
-            <h2>My Skills</h2>
+            <h5 data-aos="fade-up">Why Choose Me</h5>
+            <h2 data-aos="fade-up">My Skills</h2>
             <div className="container">
                 <div className="section-title center"></div>
                 <div className="skill-items">
-                    <div className="skill-item">
+                    <div className="skill-item" data-aos="fade-up">
                         <div className="skill-info">
                             <p className="skill-name">Frontend Development</p>
                             <p className="skill-percent">80%</p>
@@ -19,7 +26,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skill-item">
+                    <div className="skill-item" data-aos="fade-up">
                         <div className="skill-info">
                             <p className="skill-name">ReactJS</p>
                             <p className="skill-percent">85%</p>
@@ -29,7 +36,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skill-item">
+                    <div className="skill-item" data-aos="fade-up">
                         <div className="skill-info">
                             <p className="skill-name">DSA</p>
                             <p className="skill-percent">70%</p>
@@ -39,7 +46,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skill-item">
+                    <div className="skill-item" data-aos="fade-up">
                         <div className="skill-info">
                             <p className="skill-name">Machine Learning</p>
                             <p className="skill-percent">35%</p>
@@ -49,7 +56,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skill-item">
+                    <div className="skill-item" data-aos="fade-up">
                         <div className="skill-info">
                             <p className="skill-name">NLP</p>
                             <p className="skill-percent">45%</p>

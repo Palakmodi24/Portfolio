@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 import "../styles/Project.css";
 //import Fade from "react-reveal/Fade";
 
@@ -33,12 +35,17 @@ const data = [
 ];
 
 const Project = () => {
+    useEffect(() => {
+        Aos.init({duration:4000})
+    
+    
+    }, []);
     return (
         <section id="projects" className="project-section">
             {/* <Fade bottom duration={3500}> */}
             <h5>My Recent Work</h5>
             <h2>Projects</h2>
-            <div className="container project_container">
+            <div className="container project_container" data-aos="fade-up">
                 {data.map(({ id, image, title, github, demo }) => {
                     return (
                         <article key={id} className="project_item">
