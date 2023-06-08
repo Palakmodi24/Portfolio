@@ -15,8 +15,8 @@ const Skills = () => {
             <h2 data-aos="fade-up">My Skills</h2>
             <div className="container">
                 <div className="section-title center"></div>
-                <div className="skill-items">
-                    <div className="skill-item" data-aos="fade-up">
+                <div className="skill-items" data-aos="fade-up">
+                    <div className="skill-item">
                         <div className="skill-info">
                             <p className="skill-name">Frontend Development</p>
                             <p className="skill-percent">80%</p>
@@ -26,7 +26,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skill-item" data-aos="fade-up">
+                    <div className="skill-item">
                         <div className="skill-info">
                             <p className="skill-name">ReactJS</p>
                             <p className="skill-percent">85%</p>
@@ -36,7 +36,7 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skill-item" data-aos="fade-up">
+                    <div className="skill-item">
                         <div className="skill-info">
                             <p className="skill-name">DSA</p>
                             <p className="skill-percent">70%</p>
