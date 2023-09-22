@@ -7,6 +7,7 @@ import "../styles/Project.css";
 import Pr1 from "../assets/Pr1.png";
 import Pr2 from "../assets/Pr2.png";
  import Pr3 from "../assets/Pr3.png";
+ import Pr4 from "../assets/Pr4.png";
 
 const data = [
     {
@@ -31,6 +32,13 @@ const data = [
         title: "Drum Kit",
         github: "https://github.com/Palakmodi24/DrumKit",
         demo: "https://github.com/Palakmodi24/DrumKit",
+    },
+    {
+        id: 4,
+        image: Pr4,
+        title: "Youtube Clone",
+        github: "https://github.com/Palakmodi24/YoutubeClone",
+        demo: "https://youtube-two-kohl.vercel.app/",
     },
 ];
 
