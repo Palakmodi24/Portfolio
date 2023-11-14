@@ -7,7 +7,7 @@ import "../styles/Project.css";
 import Pr1 from "../assets/Pr1.png";
 import Pr2 from "../assets/Pr2.png";
  import Pr3 from "../assets/Pr3.png";
- import Pr4 from "../assets/Pr4.png";
+ import Pr4 from "../assets/PR5.png";
 
 const data = [
     {
@@ -36,9 +36,9 @@ const data = [
     {
         id: 4,
         image: Pr4,
-        title: "Youtube Clone",
-        github: "https://github.com/Palakmodi24/YoutubeClone",
-        demo: "https://youtube-two-kohl.vercel.app/",
+        title: "Dashboard Website",
+        github: "https://github.com/Palakmodi24/Dashboard",
+        demo: "https://dashboard-9p4v-git-main-palakmodi24.vercel.app/",
     },
 ];
 
